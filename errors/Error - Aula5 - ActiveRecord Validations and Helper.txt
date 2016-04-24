@@ -1,0 +1,32 @@
+ Notice: Array to string conversion in C:\xampp\htdocs\Sistema\vendor\php-activerecord\php-activerecord\lib\Validations.php on line 575
+Call Stack
+#	Time	Memory	Function	Location
+1	0.0020	364768	{main}( )	...\index.php:0
+2	0.0636	1254832	HXPHP\System\App->run( )	...\index.php:29
+3	0.0714	1305728	call_user_func_array:{C:\xampp\htdocs\Sistema\src\HXPHP\System\App.php:102} ( )	...\App.php:102
+4	0.0714	1305784	CadastroController->cadastrarAction( )	...\App.php:102
+5	0.0754	1328416	User::cadastrar( )	...\CadastroController.php:14
+6	0.1039	1501560	ActiveRecord\Model::create( )	...\User.php:72
+7	0.1239	1507320	ActiveRecord\Model->save( )	...\Model.php:771
+8	0.1240	1507320	ActiveRecord\Model->insert( )	...\Model.php:790
+9	0.1241	1507320	ActiveRecord\Model->_validate( )	...\Model.php:804
+10	0.1268	1610064	ActiveRecord\Validations->validate( )	...\Model.php:1095
+11	0.1269	1610384	ActiveRecord\Validations->validates_uniqueness_of( )	...\Validations.php:141
+
+( ! ) Fatal error: Uncaught ActiveRecord\UndefinedPropertyException: Undefined property: User->Array in C:\xampp\htdocs\Sistema\vendor\php-activerecord\php-activerecord\lib\Model.php on line 533 in C:\xampp\htdocs\Sistema\vendor\php-activerecord\php-activerecord\lib\Model.php on line 533
+( ! ) ActiveRecord\UndefinedPropertyException: Undefined property: User->Array in C:\xampp\htdocs\Sistema\vendor\php-activerecord\php-activerecord\lib\Model.php on line 533 in C:\xampp\htdocs\Sistema\vendor\php-activerecord\php-activerecord\lib\Model.php on line 533
+Call Stack
+#	Time	Memory	Function	Location
+1	0.0020	364768	{main}( )	...\index.php:0
+2	0.0636	1254832	HXPHP\System\App->run( )	...\index.php:29
+3	0.0714	1305728	call_user_func_array:{C:\xampp\htdocs\Sistema\src\HXPHP\System\App.php:102} ( )	...\App.php:102
+4	0.0714	1305784	CadastroController->cadastrarAction( )	...\App.php:102
+5	0.0754	1328416	User::cadastrar( )	...\CadastroController.php:14
+6	0.1039	1501560	ActiveRecord\Model::create( )	...\User.php:72
+7	0.1239	1507320	ActiveRecord\Model->save( )	...\Model.php:771
+8	0.1240	1507320	ActiveRecord\Model->insert( )	...\Model.php:790
+9	0.1241	1507320	ActiveRecord\Model->_validate( )	...\Model.php:804
+10	0.1268	1610064	ActiveRecord\Validations->validate( )	...\Model.php:1095
+11	0.1269	1610384	ActiveRecord\Validations->validates_uniqueness_of( )	...\Validations.php:141
+12	0.1333	1610984	ActiveRecord\Model->__get( )	...\Validations.php:575
+13	0.1334	1610984	ActiveRecord\Model->read_attribute( )	...\Model.php:345
