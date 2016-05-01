@@ -9,7 +9,7 @@
 	$configs->env->development->database->setConnectionData(array(
 		'host' => 'localhost',
 		'user' => 'root',
-		'password' => '',
+		'password' => '381086',
 		'dbname' => 'sistemahx'
 	));
 
@@ -21,9 +21,9 @@
 
 	$configs->env->production->database->setConnectionData(array(
 		'host' => 'localhost',
-		'user' => 'hxphp190_sistema',
-		'password' => '^EKI1LK(&kV[',
-		'dbname' => 'hxphp190_sistemahx'
+		'user' => 'root',
+		'password' => '381086',
+		'dbname' => 'sistemahx'
 	));
 
 	$configs->env->production->auth->setURLs('/home/', '/login/');

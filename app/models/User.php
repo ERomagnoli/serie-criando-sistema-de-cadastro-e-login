@@ -102,7 +102,6 @@ class User extends \HXPHP\System\Model
 						else {
 							$callbackObj->code = 'dados-incorretos';
 						}
-						
 
 						LoginAttempt::RegistrarTentativa($user->id);
 					}
